@@ -5,7 +5,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{times}
-\setlength{\parindent}{8pt}
+\setlength{\parindent}{10pt}
+\usepackage{minted}
 \usepackage{indentfirst}
 % -- Defining colors:
 \usepackage[dvipsnames]{xcolor}
@@ -26,15 +27,16 @@
 	captionpos=t,                    
 	keepspaces=true,                 
 	numbers=left,                    
-	numbersep=5pt,                  
+	numbersep=-5pt,                  
 	showspaces=false,                
 	showstringspaces=false,
 	showtabs=false,                  
 	tabsize=2
 }
+\usepackage[fencedCode]{markdown}
 % -- Setting up the custom style:
 \lstset{style=mystyle}
-\title{An Engineers' beginers guide to Python (from a students perspective)}
+\title{An Engineer's Beginners Guide To Python (from a students perspective)}
 \author{Muhie Al Haimus}
 
 \begin{document}
@@ -42,21 +44,35 @@
 	\section{Introduction}
 	This document could be thought as the one stop shop to succeed in EMS412U python side of the module.  
 	 \section{Week 0: The laying the foundation}
-	 Let's start with the most basic python program and explain some key concepts. Below is whats called a "code block", this contains the actual raw python code.
+	 Let's start with the most basic python program and explain some key concepts. Below is a "code block", this contains the actual raw python code.
 	 
 	\begin{lstlisting}[language=Python]
-		# Author: Muhie
-		# Date: 21/05/24
-		# Explaination of the program: Outputs a Hello World! to the screen
-		print("Hello World!")
+	# Author: Muhie
+	# Date: 21/05/24
+	# Explaination of the program: Outputs a Hello World! to the screen
+	"""I can
+	write a comment 
+	on multiple lines"""
+	print("Hello World!")
 	\end{lstlisting}
-	In every program you write you need to make it a habit to add:
+	\emph{Lines 1-3}: In every program you write you MUST always start with:
+	\begin{itemize}
+		\item{Your name}
+		\item{Today's date}
+		\item{A brief explanation of the program}
+	\end{itemize}
+	As you can see in the example above before writing my name, date and explanation I use a hashtag (\#) symbol, this denotes a comment. A comment is completely separate to the main program, comments do not effect the functionality of the program. One more thing to note is that if you need a comment over multiple lines you can use three quotation marks: three before the start of the comment and then three after the comment, as seen above with \emph{lines 4-6.}
+	\vspace{2mm}
+	\emph{Line 7}: This is where the actual python code starts the keyword  
+	\begin{markdown}
+		```print```
+	\end{markdown}
 	
-	 Syntax - these are mainly keywords (and symbols) in every programming language the syntax of language can be slightly different, in the example above .
+	
+	 Syntax - these are mainly keywords (and symbols like a hashtag \#).
 	 
 	 
-	 
-	 \section{Week 1: Building it up}
+	 \section{KEY CONCEPTS YOU'LL NEED FOR WEEKS 1-12}
 	 
 	
 	\section{I NEED HELP WHAT DO I DO!}
