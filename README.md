@@ -1,4 +1,4 @@
-# A key concepts guide of python for first year, engineering, undergraduate students
+# A key concepts guide of python: for first year, engineering, undergraduate students
 
 ## Requirements
 
