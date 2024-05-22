@@ -8,6 +8,7 @@
 \setlength{\parindent}{10pt}
 \usepackage{minted}
 \usepackage{indentfirst}
+\usepackage{hyperref}
 % -- Defining colors:
 \usepackage[dvipsnames]{xcolor}
 \definecolor{codegreen}{rgb}{0,0.6,0}
@@ -64,17 +65,47 @@
 	As you can see in the example above before writing my name, date and explanation I use a hashtag (\#) symbol, this denotes a comment. A comment is completely separate to the main program, comments do not effect the functionality of the program. One more thing to note is that if you need a comment over multiple lines you can use three quotation marks: three before the start of the comment and then three after the comment, as seen above with \emph{lines 4-6.}
 	\vspace{2mm}
 	\emph{Line 7}: This is where the actual python code starts the keyword  
-	\begin{markdown}
-		```print```
-	\end{markdown}
 	
 	
 	 Syntax - these are mainly keywords (and symbols like a hashtag \#).
 	 
 	 
 	 \section{KEY CONCEPTS YOU'LL NEED FOR WEEKS 1-12}
+	 \subsection{Week 1: Variables}
+	 A variable is simply a value that can change.
+	 \begin{lstlisting}[language=python]
+	 # Author: Muhie
+	 # Date: 22/05/24
+	 """Explaination of the program: A simple program showing how variables can be assigned in python"""
+	 
+	 a = 5 # integer
+	 b = "hello" # string
+	 c = True # boolean
+	 d = 3.14 # float
+	 \end{lstlisting}
+	 
+	 \subsection{Week 2: Selection and Iteration}
+	 	 \begin{lstlisting}[language=python]
+	 	# Author: Muhie
+	 	# Date: 22/05/24
+	 	"""Explaination of the program: A simple program showing what a for loop does and what an if statement is"""
+	 	
+	 	a = 5
+	 	if a > 5:
+	 		print("a is greater than 5!")
+	 	elif a == 5:
+	 		print("a is equal to 5!")
+	 	else:
+	 		print("a is not equal to 5 or greater than 5")
+	 	
+	 	
+	 \end{lstlisting}
+	 
+	 
+	 \subsection{Week 3: }
 	 
 	
 	\section{I NEED HELP WHAT DO I DO!}
+	\href{https://www.w3schools.com/python/python_syntax.asp}{A good reference guide to python syntax and concepts}
 	
 \end{document}
