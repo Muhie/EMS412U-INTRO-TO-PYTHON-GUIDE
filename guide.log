@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.20)  22 MAY 2024 18:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.20)  26 MAY 2024 14:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -672,27 +672,33 @@ LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 5
 (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
+(/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/02/21 1.10 listings language file
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/02/21 1.10 listings language file
+)
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 6
-1.
+5.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
-al/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}] [2] (./guide.aux)
+al/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}] [2] [3] (./guide.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `guide.out' has not changed.
-(rerunfilecheck)             Checksum: 129FFD22F07DC869A17055BBAAE73F11;1243.
+(rerunfilecheck)             Checksum: 3E1FB943F1F0D372E0AD4D7BEF8A6721;1353.
  ) 
 Here is how much of TeX's memory you used:
- 18849 strings out of 474116
- 352220 string characters out of 5743682
- 2065187 words of memory out of 5000000
- 40871 multiletter control sequences out of 15000+600000
+ 18948 strings out of 474116
+ 353480 string characters out of 5743682
+ 2095187 words of memory out of 5000000
+ 40953 multiletter control sequences out of 15000+600000
  576265 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,6n,103p,493b,1397s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -700,10 +706,10 @@ Here is how much of TeX's memory you used:
 local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texl
 ive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/t
 exmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on guide.pdf (2 pages, 60761 bytes).
+Output written on guide.pdf (3 pages, 62380 bytes).
 PDF statistics:
- 112 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
- 44 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 134 PDF objects out of 1000 (max. 8388607)
+ 119 compressed objects within 2 object streams
+ 57 named destinations out of 1000 (max. 500000)
+ 65 words of extra memory for PDF output out of 10000 (max. 10000000)
 
