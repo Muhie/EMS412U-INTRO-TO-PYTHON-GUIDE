@@ -34,92 +34,145 @@
 	showtabs=false,                  
 	tabsize=2
 }
+
 \usepackage[fencedCode]{markdown}
 % -- Setting up the custom style:
 \lstset{style=mystyle}
-\title{An Engineer's Beginners Guide To Python (from a students perspective)}
+\title{EM412U - Python: Identifying mistakes and extra practice problems.}
 \author{Muhie Al Haimus}
 
 \begin{document}
 	\maketitle
 	\section{Introduction}
-	This document could be thought as the one stop shop to succeed in EMS412U python side of the module.  
-	 \section{Week 0: The laying the foundation}
-	 Let's start with the most basic python program and explain some key concepts. Below is a "code block", this contains the actual raw python code.
-	 
+	This document will recap all of the all key syntax which is used in weeks 1-6.
+	
+	\section{Optional: Setting up python on your own device}
+	Although not essential for EMS412U. it can be really helpful to...
+	\section{Common errors: Syntax errors!}
+	Errors can look really scary at first, but don't panic almost all errors are really easy to fix!
+	
+	Syntax errors are very easy to fix! You might now be asking what even are syntax? At the most basic level syntax are keywords and operators of any programming language. These $never$ change so it is really important to make sure that you stick the rules of using syntax. Some really common syntax error examples include:
+	
+	\subsection{Spelling mistakes}
+	As you can see bellow $print$ is spelt incorrectly this causes the program to not run. This is the most basic programming mistake you can make.
 	\begin{lstlisting}[language=Python]
-	# Author: Muhie
-	# Date: 21/05/24
-	# Explaination of the program: Outputs a Hello World! to the screen
-	"""I can
-	write a comment 
-	on multiple lines"""
-	print("Hello World!")
+		# Author: Muhie
+		# Date: 21/05/24
+		# Explaination of the program: Outputs a Hello World! to the screen
+		pint('Hello World!')
+	\end{lstlisting}
+	Outputs:
+	\begin{lstlisting}[language=Bash]
+		NameError                                 Traceback (most recent call last)
+		Cell In[1], line 1
+		----> 1 pint('Hello World!')
+		
+		NameError: name 'pint' is not defined
+	\end{lstlisting}
+	All you need to fix this error is fix the typo $pint$ to $print$ and the program will run correctly.
+	\subsection{Forgetting to close brackets and quotations}
+	Bellow I have not ended my print statement with a closed bracket this causes the program to not run.
+	\begin{lstlisting}[language=Python]
+		# Author: Muhie
+		# Date: 21/05/24
+		# Explaination of the program: Outputs a Hello World! to the screen
+		pint("Hello World!"
 	\end{lstlisting}
 	\begin{lstlisting}[language=Bash]
-		Output:
-		Hello World!
+	  Cell In[3], line 1
+	print('Hello World!'
+					   				 ^
+	SyntaxError: incomplete input
 	\end{lstlisting}
-	\emph{Lines 1-3}: In every program you write you MUST always start with:
-	\begin{itemize}
-		\item{Your name}
-		\item{Today's date}
-		\item{A brief explanation of the program}
-	\end{itemize}
-	As you can see in the example above before writing my name, date and explanation I use a hashtag (\#) symbol, this denotes a comment. A comment is completely separate to the main program, comments do not effect the functionality of the program. One more thing to note is that if you need a comment over multiple lines you can use three quotation marks: three before the start of the comment and then three after the comment, as seen above with \emph{lines 4-6.}
-	\vspace{2mm}
-	\emph{Line 7}: This is where the actual python code starts the keyword  
+	All that is required to resolve the error here is close the brackets after the quotation mark. It is really important to make it a habit whenever you open a bracket or quotation marks to add an accompanying closed bracket or quotation mark.
+	
+	Again similarly, I have written the same program as before but I have not forgotten bracket but have forgotten close my quotes
+		\begin{lstlisting}[language=Python]
+		# Author: Muhie
+		# Date: 21/05/24
+		# Explaination of the program: Outputs a Hello World! to the screen
+		print('Hello World!)
+	\end{lstlisting}
+	\begin{lstlisting}[language=Bash]
+		  Cell In[4], line 1
+		print('Hello World!)
+					^
+		SyntaxError: unterminated string literal (detected at line 1)
+	\end{lstlisting}
+	\subsection{Forgetting to use commas and colons where necessary}
+	\subsection{Indentation}
+	In python it is critical to have the correct indentation to avoid basic errors. One indent is either one press of the tab key or four presses of the space-bar. In python indentation is used to show a block of code.
+	A basic rule to go by is whenever a colon is used at the end of the previous statement on the line above you must change the indentation
+	\newline{Example:}
+	\begin{lstlisting}[language=Python]
+		# Author: Muhie
+		# Date: 21/05/24
+		# Explaination of the program: checks if five is greater than two and prints Yes it is Duh
+		if 5 > 2:
+			print("Yes, it is Duh")
+	\end{lstlisting}
+	Ouputs:
+	\begin{lstlisting}[language=Bash]
+		Yes, it is Duh
+	
+	\end{lstlisting}
+	
+	\subsection{Forgetting to use commas and colons where necessary}
 	
 	
-	 Syntax - these are mainly keywords (and symbols like a hashtag \# or a combination of symbols and keywords like print("") ).
+	\subsection{Forgetting to import libraries when needed}
+	
+	\section{Common errors: Logic errors}
+	\section{Common errors: Jupiter Hub specific issues!}
+	\section{Practice: Find the error!}
+	
+	
+	\section{Practice: Practice questions for weeks 1-6}
+	
+	\subsection{Week 1: User input}
+	1) Write a program to read in the user’s name and then display a message to welcome them by name (e.g.  “Hello Fred!”) 
+	Write a program to read in two numbers and print their sum and average. Run your function to show that it works with the numbers 12 and 15
+	 \subsection{Week 1: Data types}
+	 2) Write a program to read in the amount of the bill and the amount of money tendered. Calculate and display the amount of change due to the customer. Run your function to show that it works with a bill amount of £8.50 and an amount tendered of £10.
 	 
-	 
-	 \section{KEY CONCEPTS YOU'LL NEED FOR WEEKS 1-12}
-	 \subsection{Week 1: Variables}
-	 A variable is simply a value that can change. A variable can have many different types below is the most common types that you will use throughout the module.
-	 \begin{lstlisting}[language=python]
-	 # Author: Muhie
-	 # Date: 22/05/24
-	 """Explaination of the program: A simple program showing how variables can be assigned in python"""
-	 
-	 a = 5 # integer
-	 b = "hello" # string
-	 c = True # boolean
-	 d = 3.14 # float
-	 \end{lstlisting}
-	 
+	 3) Write a program to read in the amount of a restaurant bill and then ask the user how much in a \% of the total bill they would like to tip and then output the tip amount. Run your program to show the amounts on a bill of £87 with a tip of 12.5\%.
 	 \subsection{Week 2: Selection and Iteration}
-	 	 \begin{lstlisting}[language=python]
-	 	# Author: Muhie
-	 	# Date: 22/05/24
-	 	"""Explaination of the program: A simple program showing what a for loop does and what an if statement is"""
-	 	start = 0 
-	 	stop = 10
-	 	for i in range(start,stop):
-	 		print(i)
-	 		
-	 	a = 5
-	 	if a > 5:
-	 		print("a is greater than 5!")
-	 	elif a == 5:
-	 		print("a is equal to 5!")
-	 	else:
-	 		print("a is not equal to 5 or greater than 5")
-	 	
-	 	
-	 \end{lstlisting}
+	 1) Write a program that asks the user to input their age. If the age is 15 or less, display the message “You are entitled to purchase a child’s ticket”. Otherwise, display “You must buy and adult ticket!” Show that the program works correctly with the inputs of 14, 15 and 16.
+	 2) Write a Program using a for loop that counts from 1-100 that prints out if the variable increasing after iteration is either even or odd. Hint: use the modulus operator. 
+	 3) Write a program that uses a “while loop” to ask the user to type in ‘ducky’ and loop endlessly until user types it in. Show it working with the words: cup, teapot, cake, ducky entered in sequence.
+
+	 \subsection{Week 3 using libraries and understanding functions}
+	 1) Write a program that generates a random number between 1 and 100 and then asks the user to guess it. Allow them 5 guesses before the game is “lost”. Help them by displaying whether the guess is too high or too low after each attempt. Make sure that if they guess correctly that they WIN! Hint: use the library $random$ to generate random numbers! 
+	 2) A function in python allows a programmer to minimises the amount of duplicated code in a codebase. Using a function create a Fahrenheit to Centigrade converter and call this function three times to show that you don't have to copy and paste the code blocks or re-run the code. Temperatures can be converted from Fahrenheit to Centigrade using the following formula, where F is the temperature in Fahrenheit and C the temperature in Centigrade: $C = 5 (F-32) / 9$ Write a function to input a Fahrenheit temperature and output the equivalent temperature in Centigrade. Extension: modify the output to display the temperature to two decimal places. (hint: use google if needed!)
+	 Write a program, to take a number from the user and display its factorial. 
 	 
+	 Factorial of  2 = 2 x 1 = 2 
 	 
-	 \subsection{Week 3: }
+	 Factorial of  3 = 3 x 2 x 1 = 6 
 	 
+	 Factorial of  4 = 4 x 3 x 2 x 1 = 24 
 	 
-	 \subsection{Key syntax}
-	\begin{lstlisting}[language=python]
-	 	import (your library name here) # this imports a library, a library
-	 \end{lstlisting}
+	 Etc… 
 	 
+	 The program should comprise three functions: 
+	 
+	 main – the main function that calls get\_number and factorial and displays the result.  
+	 
+	 get\_number -  function that gets and returns the number from the user 
+	 
+	 factorial - function that is passed a number (previously entered) as a parameter and returns one value which is the factorial of this number. 
+	 
+	\section{Practice: Answers}
 	
-	\section{I NEED HELP WHAT DO I DO!}
-	\href{https://www.w3schools.com/python/python_syntax.asp}{A good reference guide to python syntax and concepts}
+	\section{I NEED MORE HELP WHAT DO I DO!}
+	\subsection{Written Resources}
+	\noindent{\href{https://www.w3schools.com/python/python_syntax.asp}{A good reference guide to python syntax and concepts.}}\newline
+	\href{https://stackoverflow.com/}{Almost any and every python error has been documented here.}
+	\subsection{Video resources}
+	\noindent{\href{https://www.youtube.com/watch?v=7R-CfL21zIY&list=PLzMcBGfZo4-lMz6bsWzF2tt8K8iZJdLd1&index=1}{Tech With Tim very basic python tutorials.}} \newline
+	\href{https://www.youtube.com/watch?v=biLz7KPgHJA&list=PLzMcBGfZo4-ksMuZFqH5LBytux1_p7bcx}{Tech With Tim Numpy tutorials.}
+	
+	
+	
 	
 \end{document}
